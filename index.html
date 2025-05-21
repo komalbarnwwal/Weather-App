@@ -1,56 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Weather App</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ruda:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <div class="container">
-    <div class="left-panel">
-      <div class="date-section">
-        <h1>Tuesday</h1>
-        <p>9 July 2024</p>
-      </div>
-    </div>
-
-    <div class="right-panel">
-      <div class="search-box">
-        <input type="text" placeholder="Search Location">
-        <button>Search</button>
+    <div class="wrapper">
+      
+      
+      <div class="img_section">
+        <div class="default_info">
+          <h2 class="default_day">Loading...</h2>
+          <h3 class="default_date">Loading...</h3>
+          <div class="weather_temp icons"></div>
+        </div>
       </div>
 
-      <div class="weather-info">
-        <p><strong>NAME</strong> <span>United Kingdom</span></p>
-        <p><strong>TEMP</strong> <span>23℃</span></p>
-        <p><strong>HUMIDITY</strong> <span>2%</span></p>
-        <p><strong>WIND SPEED</strong> <span>2.92 Km/h</span></p>
+     
+      <div class="content_section">
+        <form>
+          <input type="text" class="input_field" placeholder="Search Location" />
+          <button class="btn_search">Search</button>
+        </form>
+
+       
+        <div class="day_info">
+          
+        </div>
+
+        
+        <div class="list_content">
+          <ul>
+            
+          </ul>
+        </div>
       </div>
 
-      <div class="forecast">
-        <div class="day">
-          <img src="https://img.icons8.com/ios/50/000000/rain.png" />
-          <p>Sat</p>
-          <p>23℃</p>
-        </div>
-        <div class="day">
-          <img src="https://img.icons8.com/ios/50/000000/rain.png" />
-          <p>Sat</p>
-          <p>23℃</p>
-        </div>
-        <div class="day">
-          <img src="https://img.icons8.com/ios/50/000000/rain.png" />
-          <p>Sat</p>
-          <p>23℃</p>
-        </div>
-        <div class="day">
-          <img src="https://img.icons8.com/ios/50/000000/rain.png" />
-          <p>Sat</p>
-          <p>23℃</p>
-        </div>
-      </div>
     </div>
   </div>
+
+ 
+  <script src="script.js"></script>
 </body>
 </html>
